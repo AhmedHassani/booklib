@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BookHub</string>
+    <string name="app_name">Book libarar</string>
     <string name="dashboard">Dashboard</string>
     <string name="favourites">Favourites</string>
     <string name="profile">Profile</string>
@@ -13,7 +13,7 @@
     <string name="dashboard_fragment">Dashboard Fragment</string>
     <string name="favourites_fragment">Favourites Fragment</string>
     <string name="profile_fragment">Profile Fragment</string>
-    <string name="about_app_fragment">About App Fragment</string>
+    <string name="about_app_fragment">Barcode</string>
     <string name="add_to_favourites">Add To Favourites</string>
     <string name="action_sort">Action Sort</string>
 </resources>

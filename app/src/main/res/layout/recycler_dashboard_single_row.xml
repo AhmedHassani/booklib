@@ -54,13 +54,13 @@
             android:id="@+id/txtBookPrice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:text="Rs. 299"
-            android:padding="8dp"
             android:layout_below="@id/txtBookAuthor"
+            android:layout_alignParentBottom="true"
+            android:padding="8dp"
+            android:text="299"
+            android:textColor="#357a38"
             android:textSize="15sp"
-            android:textStyle="bold"
-            android:textColor="#357a38"/>
+            android:textStyle="bold" />
     </RelativeLayout>
 
 

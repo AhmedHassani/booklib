@@ -94,7 +94,7 @@ class DashboardFragment : Fragment() {
                                 bookJsonObject.getString("name"),
                                 bookJsonObject.getString("author"),
                                 bookJsonObject.getString("rating"),
-                                bookJsonObject.getString("price"),
+                                bookJsonObject.getString("price").replace("Rs.","$"),
                                 bookJsonObject.getString("image")
                             )
                             bookInfoList.add(bookObject)

@@ -18,10 +18,10 @@
         android:title="@string/profile"
         android:icon="@drawable/ic_profile"
         android:layout_gravity="center"/>
-    <item
-        android:id="@+id/aboutApp"
-        android:title="@string/about_app"
-        android:icon="@drawable/ic_about_app"
-        android:layout_gravity="center"/>
+        <item
+            android:id="@+id/Barcode"
+            android:layout_gravity="center"
+            android:icon="@drawable/ic_about_app"
+            android:title="Barcode" />
 </group>
 </menu>

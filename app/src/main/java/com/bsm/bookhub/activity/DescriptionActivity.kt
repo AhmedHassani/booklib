@@ -90,18 +90,19 @@ class DescriptionActivity : AppCompatActivity() {
                 object : JsonObjectRequest(Request.Method.POST, url, jsonParams, Response.Listener {
 
                     try {
-
                         val success = it.getBoolean("success")
                         if (success) {
                             val bookJsonObject = it.getJSONObject("book_data")
                             progressLayout.visibility = View.GONE
 
+                            var p = bookJsonObject.getString("price").replace("Rs.","$")
+                            var n = (p.toInt())/10
                             val bookImageUrl = bookJsonObject.getString("image")
                             Picasso.get().load(bookJsonObject.getString("image"))
                                 .error(R.drawable.default_book_cover).into(imgBookImage)
                             txtBookName.text = bookJsonObject.getString("name")
                             txtBookAuthor.text = bookJsonObject.getString("author")
-                            txtBookPrice.text = bookJsonObject.getString("price")
+                            txtBookPrice.text ="3"
                             txtBookRating.text = bookJsonObject.getString("rating")
                             txtBookDesc.text = bookJsonObject.getString("description")
 
@@ -109,7 +110,7 @@ class DescriptionActivity : AppCompatActivity() {
                                 bookId?.toInt() as Int,
                                 txtBookName.text.toString(),
                                 txtBookAuthor.text.toString(),
-                                txtBookPrice.text.toString(),
+                                txtBookPrice.text.toString().replace("Rs.",""),
                                 txtBookRating.text.toString(),
                                 txtBookDesc.text.toString(),
                                 bookImageUrl

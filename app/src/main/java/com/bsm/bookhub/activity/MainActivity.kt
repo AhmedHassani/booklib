@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity() {
     lateinit var frameLayout: FrameLayout
     lateinit var navigationView: NavigationView
 
-
     var previousMenuItem:MenuItem?=null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -81,14 +80,14 @@ class MainActivity : AppCompatActivity() {
                     supportActionBar?.title = "Profile"
                     drawerLayout.closeDrawers()
                 }
-                R.id.aboutApp -> {
+                R.id.Barcode -> {
                     supportFragmentManager.beginTransaction()
                         .replace(
                             R.id.frame,
                             AboutAppFragment()
                         )
                         .commit()
-                    supportActionBar?.title = "About App"
+                    supportActionBar?.title = "Barcode"
                     drawerLayout.closeDrawers()
                 }
             }
